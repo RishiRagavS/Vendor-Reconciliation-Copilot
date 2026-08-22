@@ -1,0 +1,45 @@
+.balance-chart { padding: 26px 30px 18px; margin-top: 20px; }
+
+.balance-chart__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.balance-chart__heading {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--ink-faint);
+  font-weight: 600;
+}
+
+.balance-chart__legend { display: flex; gap: 16px; }
+.balance-chart__legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+.balance-chart__swatch { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
+.balance-chart__swatch--gold { background: var(--gold-bright); }
+.balance-chart__swatch--koi { background: var(--koi); }
+
+.balance-chart__svg { width: 100%; height: auto; display: block; }
+
+.balance-chart__gridline { stroke: var(--paper-line); stroke-width: 1; }
+
+.balance-chart__axis-label { font-family: var(--font-mono); font-size: 10.5px; fill: var(--ink-faint); }
+.balance-chart__axis-label--y { text-anchor: end; }
+
+.balance-chart__line { fill: none; stroke-width: 2.25; }
+.balance-chart__line--gold { stroke: var(--gold-bright); }
+.balance-chart__line--koi { stroke: var(--koi); }
+
+.balance-chart__dot--gold { fill: var(--gold-bright); }
+.balance-chart__dot--koi { fill: var(--koi); }

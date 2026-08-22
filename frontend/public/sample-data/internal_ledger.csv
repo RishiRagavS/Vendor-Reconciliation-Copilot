@@ -1,0 +1,15 @@
+Date,Ref No,Details,Debit,Credit
+2026-02-01,INV-1001,Office Supplies - Feb Invoice,,450.00
+2026-02-03,INV-1002,Packaging Materials Invoice,,1280.50
+2026-02-05,INV-1003,Raw Materials Batch 12,,3200.00
+2026-02-06,PMT-2001,Payment to Acme Supplies,1500.00,
+2026-02-08,INV-1004,Raw Materials Batch 13,,2700.00
+2026-02-10,INV-1005,Freight Charges,,320.75
+2026-02-11,CN-3001,Credit Note - Damaged Goods,180.00,
+2026-02-15,INV-1007,Raw Materials Batch 14,,4100.00
+2026-02-16,PMT-2002,Payment to Acme Supplies,2000.00,
+2026-02-21,,Late payment fee - Feb statement,,45.00
+2026-02-22,INV-1009,Raw Materials Batch 15,,1975.60
+2026-02-24,ACC-9001,Accrual - Estimated Freight Feb,,150.00
+2026-02-27,INV-1010,Packaging Materials Invoice,,890.00
+2026-02-28,PMT-2003,Payment to Acme Supplies,3000.00,

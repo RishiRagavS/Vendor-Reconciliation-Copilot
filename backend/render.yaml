@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: vendor-reconciliation-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: "*"
+        # After you deploy the frontend, tighten this to your Cloudflare Pages
+        # URL(s), comma-separated, e.g.:
+        # value: "https://vendor-recon.pages.dev,https://your-custom-domain.com"
+    healthCheckPath: /api/health

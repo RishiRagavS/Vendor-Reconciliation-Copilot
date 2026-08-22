@@ -1,0 +1,47 @@
+.rings { display: inline-block; }
+
+.rings__ring {
+  fill: none;
+  stroke-width: 3;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.rings__ring--gold { stroke: var(--gold-bright); }
+.rings__ring--koi { stroke: var(--koi); }
+
+.rings__orbit {
+  transform-origin: 0 0;
+}
+
+.rings--loading .rings__orbit--a {
+  animation: rings-orbit-cw 3.2s linear infinite;
+}
+.rings--loading .rings__orbit--b {
+  animation: rings-orbit-ccw 2.4s linear infinite;
+}
+
+@keyframes rings-orbit-cw {
+  from { transform: rotate(0deg) translate(var(--r), 0); }
+  to   { transform: rotate(360deg) translate(var(--r), 0); }
+}
+@keyframes rings-orbit-ccw {
+  from { transform: rotate(0deg) translate(var(--r), 0); }
+  to   { transform: rotate(-360deg) translate(var(--r), 0); }
+}
+
+.rings__spark {
+  fill: var(--gold-bright);
+  animation: rings-spark-in 0.5s ease-out both 0.2s;
+}
+
+@keyframes rings-spark-in {
+  from { opacity: 0; transform: translate(0, -2px) scale(0.4); }
+  to   { opacity: 1; transform: translate(0, -2px) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rings--loading .rings__orbit--a,
+  .rings--loading .rings__orbit--b {
+    animation: none;
+    transform: translate(var(--r), 0);
+  }
+}

@@ -1,0 +1,50 @@
+:root {
+  /* --- color: warm paper + koi orange + metallic gold, with moss/berry as
+     functional accents so the palette reads as a deliberate system, not a
+     two-color template. --- */
+  --paper: #F7F2E7;
+  --paper-deep: #EFE4CC;
+  --paper-line: #E2D4B0;
+  --ink: #2A2118;
+  --ink-soft: #5B5040;
+  --ink-faint: #8C8069;
+
+  --koi: #E85A17;
+  --koi-strong: #C74710;
+  --koi-light: #FF8A42;
+  --koi-wash: #FBE4D2;
+
+  --gold: #B2841E;
+  --gold-bright: #D6A93A;
+  --gold-pale: #EFDCA2;
+  --gold-wash: #F6ECC9;
+
+  --moss: #58643F;
+  --moss-wash: #E4E8D4;
+
+  --berry: #9C3B2A;
+  --berry-wash: #F3DBD2;
+
+  --white: #FFFDF8;
+
+  /* --- type --- */
+  --font-display: "Fraunces", "Iowan Old Style", serif;
+  --font-body: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* --- shape / spacing --- */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pond: 999px;
+
+  --shadow-card: 0 1px 2px rgba(42, 33, 24, 0.06), 0 8px 24px -12px rgba(42, 33, 24, 0.18);
+  --shadow-pop: 0 2px 4px rgba(42, 33, 24, 0.08), 0 16px 40px -16px rgba(42, 33, 24, 0.28);
+
+  --container: 1080px;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Intentionally not offering a dark theme: this brand is a paper/ink,
+     daylight palette by design. Kept as a no-op block for future use. */
+}

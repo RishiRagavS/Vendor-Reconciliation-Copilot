@@ -1,0 +1,21 @@
+.sparkle-field {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.sparkle-field__star {
+  position: absolute;
+  animation: sparkle-twinkle 3.6s ease-in-out infinite;
+}
+
+@keyframes sparkle-twinkle {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: var(--sparkle-op, 0.6); }
+  50% { transform: scale(1.3) rotate(14deg); opacity: calc(var(--sparkle-op, 0.6) * 0.5); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sparkle-field__star { animation: none; }
+}
